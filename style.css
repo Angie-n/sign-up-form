@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 10px;
+    --page-width-left: 35%;
+}
+
+@font-face {
+    font-family: satisfy;
+    src: url("/fonts/Satisfy-Regular.ttf");
+}
+
+body {
+    display: flex;
+}
+
+div#title-container {
+    height: 100vh;
+    width: var(--page-width-left);
+    background-image: url("/img/bread-bg.jpg");
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20%;
+    height: max(15%, 120px);
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: satisfy;
+    font-size: clamp(3.5em, 3vw, 5em);
+    color: white;
+    border-radius: 2%;
+}
+
+aside {
+    width: var(--page-width-left);
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+}
+
+aside, aside a:visited, aside a:link {
+    color: rgb(233, 233, 233);
+}
+
+header img {
+    margin: 5px;
+    max-height: 70%;
+}
+
+form {
+    width: 65%;
+}
