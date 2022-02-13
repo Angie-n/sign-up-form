@@ -19,36 +19,48 @@
         </aside>
     </div>
     <form>
-        <section id="intro-section">
-            <h2>Your Bread and Butter</h2>
-            <p>Is your life crumbling? Do you feel like muffin matters?
-                <br>We'll get you rye back on track.
-                <br>Sign up now to baguette about it!<br>
+        <div id="intro-container" class="form-area">
+            <p><b>Is your life crumbling? Do you feel like muffin matters?
+                <br>You've come to the rye-ght place. We're here to give a toast to you.
+                <br>Sign up now to baguette about your problems!<br>
                 <br><i>This is not a real online service.
-                <br>We are also not responsible if bad puns worsens your existential bread.</i>
+                <br>We are also not responsible if bad puns worsens your existential bread.</i></b>
             </p>
-        </section>
-        <section id="question-section">
+        </div>
+        <section id="question-section" class="form-area">
             <h2>Bready, Set, Go!</h2>
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="first-name" required>
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="phone-num">Phone Number</label>
-            <input type="tel" id="phone-num" name="phone-num" required>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-            <label for="confirm-password">Confirm Password</label>
-            <input type="text" id="confirm-password" name="confirm-password" required>
+            <div id="question-container">
+                <div class="question-item">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="question-item">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="question-item">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="question-item">
+                    <label for="phone-num">Phone Number</label>
+                    <input type="tel" id="phone-num" name="phone-num" placeholder="(XXX) XXX-XXXX" pattern="((\([0-9]{3}\))|([0-9]{3}))[0-9]{3}-{0,1}[0-9]{4}" oninvalid="this.setCustomValidity('Enter Phone Number in the format (123)456-7890')"
+                    oninput="this.setCustomValidity('')" required>
+                </div>
+                <div class="question-item">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="question-item">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+            </div>
         </section>
-        <div id="submit-container">
+        <div id="submit-container" class="form-area">
             <button type="submit">Create Account</button>
             <p>Already have an account? <a id="login-link" href="#">Log in</a></p>
         </div>
     </form>
 </body>
 </html>
-<!--Photo by <a href="https://unsplash.com/@mariasfeelinggood?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Maria Petersson</a> on <a href="https://unsplash.com/s/photos/bread?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
-<!--<a href="https://www.flaticon.com/free-icons/bread" title="bread icons">Bread icons created by Freepik - Flaticon</a>-->
