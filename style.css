@@ -40,7 +40,7 @@ a:link {
     height: inherit;
     min-height: 100vh;
     width: var(--page-width-left);
-    background-image: url("/img/bread-bg.jpg");
+    background-image: url("./img/bread-bg.jpg");
     background-size: cover;
 }
 
